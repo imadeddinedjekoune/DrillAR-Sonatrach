@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="3000"
+        motion:autoTransition="animateToEnd">
+        <KeyFrameSet>
+            <KeyAttribute
+                motion:motionTarget="@+id/backSonatrach"
+                motion:framePosition="30"
+                android:alpha="0" />
+            <KeyAttribute
+                motion:motionTarget="@+id/backSonatrach"
+                motion:framePosition="100"
+                android:alpha="0" />
+            <KeyAttribute
+                motion:motionTarget="@+id/backgroundLayout"
+                motion:framePosition="75"
+                android:scaleX="0" />
+            <KeyAttribute
+                motion:motionTarget="@+id/backgroundLayout"
+                motion:framePosition="75"
+                android:scaleY="0" />
+            <KeyAttribute
+                motion:motionTarget="@+id/backgroundLayout"
+                motion:framePosition="100"
+                android:scaleX="0" />
+            <KeyAttribute
+                motion:motionTarget="@+id/backgroundLayout"
+                motion:framePosition="100"
+                android:scaleY="0" />
+
+            <KeyAttribute
+                motion:motionTarget="@+id/backSonatrach"
+                motion:framePosition="30"
+                android:scaleX="0" />
+            <KeyAttribute
+                motion:motionTarget="@+id/backSonatrach"
+                motion:framePosition="30"
+                android:scaleY="0" />
+            <KeyAttribute
+                motion:motionTarget="@+id/logoSonatrach"
+                motion:framePosition="60"
+                android:scaleX="1"
+                android:scaleY="1"
+                />
+            <KeyAttribute
+                motion:motionTarget="@+id/logoSonatrach"
+                motion:framePosition="60"
+                android:translationY="0dp" />
+
+            <KeyAttribute
+                motion:motionTarget="@+id/logoSonatrach"
+                motion:framePosition="100"
+                android:translationY="-120dp"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                />
+            <KeyAttribute
+                motion:motionTarget="@+id/linearLayout2"
+                motion:framePosition="0"
+                android:translationY="450dp" />
+            <KeyAttribute
+                motion:motionTarget="@+id/linearLayout2"
+                motion:framePosition="100"
+                android:translationY="100dp" />
+
+
+
+        </KeyFrameSet>
+        <OnSwipe motion:maxAcceleration="0.1" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/backgroundLayout"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:scaleX="10"
+            android:scaleY="10" />
+        <Constraint
+            android:id="@+id/logoSonatrach"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:scaleX="0"
+            android:scaleY="0" />
+        <Constraint
+            android:id="@+id/backSonatrach"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:scaleX="1"
+            android:scaleY="1" />
+        <Constraint
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="1" />
+    </ConstraintSet>
+</MotionScene>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">USTHBmap</string>
+    <string name="sonatrach">SONATRACH</string>
+    <string-array name="status">
+        <item>Student</item>
+        <item>Teacher</item>
+        <item>Other</item>
+    </string-array>
+</resources>

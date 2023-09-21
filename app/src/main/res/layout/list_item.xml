@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="2dp"
+    android:background="@drawable/shape"
+    android:layout_marginStart="2dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="2dp"
+
+    >
+
+    <ImageView
+
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:paddingTop="30dp"
+
+        android:src="@drawable/pump"
+        />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mud pump"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Une pompe à boue est un équipement utilisé dans le forage pour pomper la boue dans le puits, assurant la circulation et la pression nécessaires pendant les opérations de forage."
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Voir en AR     "
+        android:layout_gravity="end"
+        android:shadowRadius="30"
+        android:elevation="6dp"
+        android:textColor="@color/black"
+        android:background="@drawable/btn_custum"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="24dp" />
+    </LinearLayout>
+
+</LinearLayout>
